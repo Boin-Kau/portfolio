@@ -90,16 +90,16 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={`${author.name} - ${config.title}`} />
         <meta name="twitter:url" content={config.siteUrl + location.pathname} />
-        {config.twitter && (
+        {config.github && (
           <meta
             name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            content={`@${config.github.split('https://twitter.com/')[1]}`}
           />
         )}
-        {config.twitter && (
+        {config.github && (
           <meta
             name="twitter:creator"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            content={`@${config.github.split('https://twitter.com/')[1]}`}
           />
         )}
       </Helmet>

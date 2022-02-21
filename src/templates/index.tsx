@@ -58,7 +58,7 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:description" content={config.description} />
         <meta property="og:url" content={config.siteUrl} />
         <meta property="og:image" content={`${config.siteUrl}${getSrc(props.data.header)}`} />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
+        {config.instagram && <meta property="article:publisher" content={config.instagram} />}
         {config.googleSiteVerification && (
           <meta name="google-site-verification" content={config.googleSiteVerification} />
         )}
@@ -67,10 +67,10 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta name="twitter:description" content={config.description} />
         <meta name="twitter:url" content={config.siteUrl} />
         <meta name="twitter:image" content={`${config.siteUrl}${getSrc(props.data.header)}`} />
-        {config.twitter && (
+        {config.github && (
           <meta
             name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
+            content={`@${config.github.split('https://twitter.com/')[1]}`}
           />
         )}
         <meta property="og:image:width" content={width?.toString()} />
